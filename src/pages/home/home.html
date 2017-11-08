@@ -1,11 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      IONIC LAZY LOADING
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
  <button ion-button (click)="goToInfoPage()">Go To Info</button>
+
+
+    <button  ion-item *ngFor="let item of items" (click)="goToItemDesc(item)">
+    {{item.item}}
+     </button>
+
 </ion-content>
