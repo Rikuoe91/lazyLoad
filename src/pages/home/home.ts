@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {IonicPage, NavController} from 'ionic-angular';
+import {InfoPage} from "../info/info";
 
 
 @IonicPage()
@@ -12,5 +13,12 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+
+
+    goToInfoPage(){
+      this.navCtrl.push("InfoPage");
+    }
+
+
 
 }
